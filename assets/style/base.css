@@ -16,3 +16,22 @@ html{
     --font-color : #fff;
     --black-color : #000;
 }
+
+@media (max-width:1199px) {
+    .main {
+        display: none;
+    }
+    
+}
+
+/* @media (min-width: 1199px) and (max-width:1300px) {
+    .header__info-server:last-child {
+        text-align: right;
+    }
+} */
+
+@media (max-width: 1198px) {
+    .main__below-1200px {
+        display: flex !important;
+    }
+}
