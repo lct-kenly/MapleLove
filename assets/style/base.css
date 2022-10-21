@@ -24,11 +24,11 @@ html{
     
 }
 
-/* @media (min-width: 1199px) and (max-width:1300px) {
+@media (min-width: 1199px) and (max-width:1300px) {
     .header__info-server:last-child {
         text-align: right;
     }
-} */
+}
 
 @media (max-width: 1198px) {
     .main__below-1200px {
