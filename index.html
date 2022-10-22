@@ -24,7 +24,7 @@
             </div>
             <div class="header__navbar">
                 <ul class="header__list">
-                    <li class="header__list-items"> <a href="" class="header__list-link" >Home</a></li>
+                    <li class="header__list-items"> <a href="#" class="header__list-link" >Home</a></li>
                     <li class="header__list-items"> <a href="https://www.facebook.com/maplelove2017" target="_blank" class="header__list-link">Fanpage</a></li>
                     <li class="header__list-items"> <a href="https://www.facebook.com/groups/maplelove/" target="_blank" class="header__list-link">Group</a></li>
                     <!-- <li class="header__list-items"> <a href="https://discord.gg/gA9GNEN3vB" target="_blank" class="header__list-link">Download</a></li> -->
@@ -273,6 +273,10 @@
         </div>
     </div>
 
+    <!-- back to top btn -->
+
+    <a id="myBtn" href="#top" onclick="scrollToTop(); return false"><i class="fa-solid fa-arrow-up"></i></a>
+
         <div class="main__below-1200px">
             <p class="main__below-1200px-message">
                 Sorry, but i'm so fucking lazy for responsive, so please use your computer to enter this site or use a device with 1200px display width or more !!
@@ -285,6 +289,7 @@
                 <a href="https://discord.gg/VTRE4G2" class="main__small-link"><i class="fa-brands fa-discord"></i></a>
             </p>
         </div>
+        
 </body>
 
 
@@ -295,17 +300,29 @@
 var className = "active";
 var className2 = "logo_img"
 var scrollTrigger = 100;
+let mybutton = document.getElementById("myBtn");
 
 window.onscroll = function() {
-  // We add pageYOffset for compatibility with IE.
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
     document.getElementById("header").classList.add(className);
     document.getElementsByClassName("header__navbar-logo-img")[0].classList.add(className2);
+    mybutton.style.display = "block";
   } else {
     document.getElementById("header").classList.remove(className);
     document.getElementsByClassName("header__navbar-logo-img")[0].classList.remove(className2);
+    mybutton.style.display = "none";
   }
 };
+
+
+function scrollToTop() {
+    var position =
+        document.body.scrollTop || document.documentElement.scrollTop;
+    if (position) {
+        window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
+        scrollAnimation = setTimeout("scrollToTop()", 30);
+    } else clearTimeout(scrollAnimation);
+}
 
 </script>
 
@@ -316,6 +333,8 @@ window.onscroll = function() {
         duration: 2000,
         delay:500,
     });
+
+
 
 </script>
 </html>
