@@ -18,8 +18,8 @@ html{
     --black-color : #000;
 }
 
-@media (max-width:1023px) {
-    .main {
+@media (max-width:1016px) {
+    .main-content {
         display: none;
     }
     .main__below-1200px {

@@ -20,10 +20,11 @@
 <body>
     <div class="main-content">
         <div id="header">
-            <div class="header__navbar-logo-img">
-                <img src="./assets/img/logo/cropped-logo.png" alt="" class="header__navbar-img">
-            </div>
+
             <div class="header__navbar">
+                <div class="header__navbar-logo-img">
+                    <a href="#" class="header__navbar-link"><img src="./assets/img/logo/cropped-logo.png" alt="" class="header__navbar-img"></a> 
+                </div>
                 <ul class="header__list">
                     <li class="header__list-items"> <a href="#" class="header__list-link" >Home</a></li>
                     <li class="header__list-items"> <a href="https://www.facebook.com/maplelove2017" target="_blank" class="header__list-link">Fanpage</a></li>
@@ -303,18 +304,18 @@
 <script>
 
 var className = "active";
-var className2 = "logo_img"
+// var className2 = "logo_img"
 var scrollTrigger = 100;
 let mybutton = document.getElementById("myBtn");
 
 window.onscroll = function() {
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
     document.getElementById("header").classList.add(className);
-    document.getElementsByClassName("header__navbar-logo-img")[0].classList.add(className2);
+    // document.getElementsByClassName("header__navbar-logo-img")[0].classList.add(className2);
     mybutton.style.display = "block";
   } else {
     document.getElementById("header").classList.remove(className);
-    document.getElementsByClassName("header__navbar-logo-img")[0].classList.remove(className2);
+    // document.getElementsByClassName("header__navbar-logo-img")[0].classList.remove(className2);
     mybutton.style.display = "none";
   }
 };

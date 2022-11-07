@@ -13,13 +13,15 @@ body{
 }
 
 .header__navbar-img {
-    width: 20rem;
+    width: 25rem;
 }
 
 .header__navbar-logo-img {
-    position: absolute;
-    left: 25rem;
+    /* position: absolute; */
+    /* left: 25rem; */
+    display: flex;
     justify-content: center;
+    width: 80%;
     -webkit-transition: all ease-out .5s;
     -moz-transition: all ease-out .5s;
     -o-transition: all ease-out .5s;
@@ -41,6 +43,11 @@ body{
 
 .logo { 
 
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .header__logo {
@@ -73,6 +80,10 @@ body{
     font-weight: 600;
 }
 
+.header__navbar-link {
+    cursor: inherit;
+}
+
 
 
 #header {
@@ -99,9 +110,9 @@ body{
 .header__list {
     list-style: none;
     width: 80%;
-    display: flex;
+
     /* padding: 0 3rem; */
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     margin-left: auto;
     margin-right: auto;
     
