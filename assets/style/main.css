@@ -204,14 +204,16 @@ body{
 }
 
 .info__server-name {
-    font-size: 3rem;
+    font-size: 3.5rem;
     
 }
+
 
 .info__server-title {
     text-align:justify;
     margin-top: 2rem;
-    font-size: 1.6rem;
+    font-size: 2.1rem;
+    
 }
 
 .header__info-server {
@@ -226,7 +228,7 @@ body{
 }
 
 .info__server-info-items {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
 }
 
