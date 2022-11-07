@@ -29,8 +29,3 @@ html{
     
 }
 
-@media (min-width: 1199px) and (max-width:1300px) {
-    .header__info-server:last-child {
-        text-align: right;
-    }
-}

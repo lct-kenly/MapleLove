@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css" integrity="sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,7 @@
     <title>Maple Love</title>
 </head>
 <body>
-    <div class="main">
+    <div class="main-content">
         <div id="header">
             <div class="header__navbar-logo-img">
                 <img src="./assets/img/logo/cropped-logo.png" alt="" class="header__navbar-img">
@@ -45,51 +46,54 @@
         </div>
 
         <div class="header__info" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-            <div class="header__info-server">
-                <h2 class="info__server-name">
-                    Maple Love
-                </h2>
-
-                <p class="info__server-title">
-                    A GMS-like v83 MapleStory private server which aims to create a challenging yet fun environment with our low rates.
-                </p>
-                <p class="info__server-title">
-                    No pay-to-win or vote-to-win, so you'll feel assured knowing that your hard work pays off.
-                </p>
+            <div class="row">
+                <div class="header__info-server col-8">
+                    <h2 class="info__server-name ">
+                        Maple Love
+                    </h2>
+    
+                    <p class="info__server-title">
+                        A GMS-like v83 MapleStory private server which aims to create a challenging yet fun environment with our low rates.
+                    </p>
+                    <p class="info__server-title">
+                        No pay-to-win or vote-to-win, so you'll feel assured knowing that your hard work pays off.
+                    </p>
+                </div>
+    
+                <div class="header__info-server col-4">
+                    <h4 class="header__info-server-title">
+                        SERVER INFORMATION
+                    </h4>
+                    <p class="info__server-info-items">
+                        MS Version: <span class="items--bold"> 83</span>
+                    </p>
+                    <p class="info__server-info-items">
+                        Experience Rate: <span class="items--bold"> 4x</span>
+                    </p>
+                    <p class="info__server-info-items">
+                        Meso Rate: <span class="items--bold"> 2x</span>
+                    </p>
+                    <p class="info__server-info-items">
+                        Drop Rate: <span class="items--bold"> Custom</span>
+                    </p>
+                    <p class="info__server-info-items">
+                        Quest Rate: <span class="items--bold"> 5x</span>
+                    </p>
+                </div>
             </div>
 
-            <div class="header__info-server">
-                <h4 class="header__info-server-title">
-                    SERVER INFORMATION
-                </h4>
-                <p class="info__server-info-items">
-                    MS Version: <span class="items--bold"> 83</span>
-                </p>
-                <p class="info__server-info-items">
-                    Experience Rate: <span class="items--bold"> 4x</span>
-                </p>
-                <p class="info__server-info-items">
-                    Meso Rate: <span class="items--bold"> 2x</span>
-                </p>
-                <p class="info__server-info-items">
-                    Drop Rate: <span class="items--bold"> Custom</span>
-                </p>
-                <p class="info__server-info-items">
-                    Quest Rate: <span class="items--bold"> 5x</span>
-                </p>
-            </div>
         </div>
         
         <!-- Body -->
         <div class="body">
            <div id="features">
                 <div class="features__tittle">
-                    <div data-aos="fade-up">FEATURES</div>
+                    <div>FEATURES</div>
                 </div>
             
                 <div class="features__card">
                     <div class="features__card-items">
-                        <div class="features__card-item" data-aos="fade-up-right">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fa-solid fa-chart-line"></i> Rate</h3>
                             </div>
@@ -98,7 +102,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-right">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon far fa-window-restore"></i> Widgets</h3>
                             </div>
@@ -107,7 +111,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-right">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon far fa-handshake"></i> Fair Play Loot System</h3>
                             </div>
@@ -116,7 +120,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-right">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-briefcase"></i> Classes</h3>
                             </div>
@@ -125,7 +129,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-right">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-share"></i> Exp Distribution</h3>
                             </div>
@@ -134,7 +138,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-right">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-journal-whills"></i> Monster Book</h3>
                             </div>
@@ -146,7 +150,7 @@
                     </div>
 
                     <div class="features__card-items">
-                        <div class="features__card-item" data-aos="zoom-out-up">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-dice-d6"></i> Custom Skills</h3>
                             </div>
@@ -155,7 +159,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="zoom-out-up">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-user-friends"></i> Party Play Bonus</h3>
                             </div>
@@ -164,7 +168,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="zoom-out-up">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-map-marker-alt"></i> Imported Content </h3>
                             </div>
@@ -173,7 +177,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="zoom-out-up">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon far fa-calendar-alt"></i> Weekly Challenges</h3>
                             </div>
@@ -182,7 +186,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="zoom-out-up">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-heartbeat"></i> No HP Washing</h3>
                             </div>
@@ -191,7 +195,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="zoom-out-up">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-gift"></i> Automated Events</h3>
                             </div>
@@ -200,8 +204,9 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="features__card-items">
-                        <div class="features__card-item" data-aos="fade-up-left">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-hammer"></i> Maker</h3>
                             </div>
@@ -211,7 +216,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-left">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-book"></i> Skill Changes</h3>
                             </div>
@@ -221,7 +226,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-left">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-arrow-alt-circle-down"></i> Patcher</h3>
                             </div>
@@ -230,7 +235,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-left">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-users"></i> Expeditions</h3>
                             </div>
@@ -239,7 +244,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-left">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-genderless"></i> Equality</h3>
                             </div>
@@ -248,7 +253,7 @@
                             </div>
                         </div>
 
-                        <div class="features__card-item" data-aos="fade-up-left">
+                        <div class="features__card-item">
                             <div class="card__item-icons">
                                 <h3><i class="card__item-icon fas fa-comment-dots"></i> Feedback</h3>
                             </div>

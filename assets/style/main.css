@@ -1,4 +1,6 @@
-
+body{
+    background-color: transparent;
+}
 
 .header {
     
@@ -6,15 +8,18 @@
 
 .active {
     background-color:rgba(6,12,34,.98);
-    height: 18rem  !important;
+    height: 9rem  !important;
     top: 0 !important;
 }
 
+.header__navbar-img {
+    width: 20rem;
+}
 
 .header__navbar-logo-img {
-    display: flex;
+    position: absolute;
+    left: 25rem;
     justify-content: center;
-    opacity: 0;
     -webkit-transition: all ease-out .5s;
     -moz-transition: all ease-out .5s;
     -o-transition: all ease-out .5s;
@@ -72,7 +77,7 @@
 
 #header {
     width: 100%;
-    height: 10rem;
+    height: 5rem;
     max-width: 100%;
     line-height: 10rem;
     /* margin-top: 10rem; */
@@ -81,7 +86,7 @@
     left: -50%;
     right: -50%;
     position: fixed;
-    top: -6rem;
+    top: 1rem;
     z-index: 1;
     transition: 0.2s;
     -webkit-transition: all ease-out .5s;
@@ -93,9 +98,10 @@
 
 .header__list {
     list-style: none;
-    width: 70%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    /* padding: 0 3rem; */
+    justify-content: flex-end;
     margin-left: auto;
     margin-right: auto;
     
@@ -111,7 +117,8 @@
 
 .header__list-items {
     float: left;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: 0 3rem;
 }
 
 .header__list-link::after {
@@ -131,7 +138,6 @@
 .header__list-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom center;
-    
 }
 
 .header__list-link:hover {
@@ -162,9 +168,11 @@
     text-decoration: none;
     color: white;
     cursor: inherit;
-
 }
 
+.logo__download-link:hover {
+    color: #fff;
+}
 .header__logo-download:hover {
     background-color: red;
 }
@@ -172,41 +180,43 @@
 .header__info {
     background-color: rgba(13,20,41,.8);
     color: white;
-    width: 100%;
+    width: 100% !important;
     padding-bottom: 4rem;
     display: flex;
     /* align-content: center; */
     justify-content: space-evenly;
     margin-top: 20rem;
-    align-content: center;
-    text-align: center;
+
+    align-content:center;
+    text-align: flex-start;
 
 }
 
 .info__server-name {
-    font-size: 4rem;
+    font-size: 3rem;
     
 }
 
 .info__server-title {
     text-align:justify;
-    margin-top: 4rem;
-    font-size: 1.8rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
 }
 
 .header__info-server {
     margin-top: 3.5rem;
-    width: 50%;
-    padding: 2rem;
+    /* width: 60%; */
+    padding:0 5rem;
 }
+
 
 .header__info-server-title {
     font-size: 2rem;
 }
 
 .info__server-info-items {
-    font-size: 1.6rem;
-    margin-top: 2rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
 }
 
 /* body */
